@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.card .cardProducts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card .cardProducts .cardProduct {
+  width: 100%;
+  padding: 50px;
+  border-bottom: 1px solid black;
+}
+.card .cardProducts .cardProduct .removeBtn {
+  background-color: #f00;
+  font-size: 25px;
+  border: none;
+  width: 30px;
+  cursor: pointer;
+}
+.card .cardProducts .cardProduct .cardImg {
+  width: 80%;
+  height: 70px;
+}
+.card .cardProducts .cardProduct .cardImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card .cardProducts .cardProduct .cardAboutProduct {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card .cardProducts .cardProduct .cardAboutProduct .productTitle {
+  font-size: 19px;
+}
+.card .cardProducts .cardProduct .cardAboutProduct .price {
+  font-size: 22px;
+  color: #f00;
+}
+.card .empty {
+  padding: 50px 0;
+  width: 100%;
+  color: #f00;
+  font-size: 22px;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.card .empty.active {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+.card .sum {
+  padding: 50px 0;
+  width: 100%;
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.card .sum.active {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+.card .sum span {
+  color: #f00;
+}
+
+.productList {
+  width: 100%;
+  padding: 100px 8%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.productList .product {
+  width: 20%;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productList .product .productImg {
+  width: 80%;
+}
+.productList .product .productImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.productList .product .aboutProduct {
+  padding: 20px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.productList .product .aboutProduct .productTitle {
+  font-size: 22px;
+}
+.productList .product .btn {
+  width: 80%;
+  height: 25px;
+  background-color: #ff0;
+  font-size: 20px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.productList .product .btn:hover {
+  background-color: #f55;
+}/*# sourceMappingURL=index.css.map */
